@@ -45,14 +45,14 @@ console.log("sconto vecchi = ", discountOver);
 if(userAge < 18){ //under
     priceDiscount = parseFloat((price - discountUnder).toFixed(2));
     //messaggi sconto
-    messageDiscount = `Hai diritto allo sconto under18 pari al 20%`;
+    messageDiscount = `Hai diritto allo sconto <u>under18</u> pari al 20%`;
     messageSconto = `Applicazine sconto: ${price} Euro - ${discountUnder} Euro`;
     
     
 }else if(userAge >= 65){ //over
     priceDiscount = parseFloat((price - discountOver).toFixed(2));
     //messaggi sconto
-    messageDiscount = `Hai diritto allo sconto over65 pari al 40%`;
+    messageDiscount = `Hai diritto allo sconto <u>over65</u> pari al 40%`;
     messageSconto = `Applicazine sconto: ${price} Euro - ${discountOver} Euro`;
    
     
@@ -72,7 +72,7 @@ console.log("prezzo scontato vecchi = ", priceDiscount);
 messageKm = `Devi percorrere ${userKm} km`;
 messageEta = `Hai ${userAge} anni`;
 messagePrezzo = `Prezzo intero ${price} Euro`;
-messageFinalPrice = `Il prezzo finale é ${priceDiscount} Euro`;
+messageFinalPrice = `<u>Il prezzo finale é ${priceDiscount} Euro</u>`;
 
 
 //output

@@ -1,0 +1,16 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    margin-top: 50px;
+    background-color: yellowgreen;
+}
+
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px;
+    color: darkgreen;
+}

@@ -43,8 +43,7 @@ console.log("sconto vecchi = ", discountOver);
 // calcolo prezzo scontato
 
 if(userAge < 18){ //under
-    // priceDiscount = parseFloat((price - discountUnder).toFixed(2));
-    priceDiscount = (price - discountUnder).toFixed(2);
+    priceDiscount = parseFloat((price - discountUnder).toFixed(2));
     //messaggi sconto
     messageDiscount = `Hai diritto allo sconto <u>under18</u> pari al 20%`;
     messageSconto = `Applica sconto: ${price} Euro - ${discountUnder} Euro`;

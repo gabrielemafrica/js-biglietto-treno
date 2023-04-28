@@ -2,6 +2,7 @@
 alert("Benvenuto al colcolatore di prezzo, INSERISCI I DATI RICHIESTI.")
 //crea variabili globali
 
+const prizeForKm = 0.21;
 let userKm;
 let userAge;
 let discountUnder;
@@ -24,7 +25,7 @@ userAge = parseInt(prompt("Quanti anni hai?"));
 
 //calcolo prezzo intero
 
-price = userKm * 0.21;
+price = userKm * prizeForKm;
 
 
 console.log("km = ", userKm);

@@ -43,29 +43,30 @@ console.log("sconto vecchi = ", discountOver);
 // calcolo prezzo scontato
 
 if(userAge < 18){ //under
-    priceDiscount = parseFloat((price - discountUnder).toFixed(2));
+    // priceDiscount = parseFloat((price - discountUnder).toFixed(2));
+    priceDiscount = (price - discountUnder).toFixed(2);
     //messaggi sconto
     messageDiscount = `Hai diritto allo sconto <u>under18</u> pari al 20%`;
-    messageSconto = `Applicazine sconto: ${price} Euro - ${discountUnder} Euro`;
+    messageSconto = `Applica sconto: ${price} Euro - ${discountUnder} Euro`;
     
     
 }else if(userAge >= 65){ //over
     priceDiscount = parseFloat((price - discountOver).toFixed(2));
     //messaggi sconto
     messageDiscount = `Hai diritto allo sconto <u>over65</u> pari al 40%`;
-    messageSconto = `Applicazine sconto: ${price} Euro - ${discountOver} Euro`;
+    messageSconto = `Applica sconto: ${price} Euro - ${discountOver} Euro`;
    
     
 }else{ //no sconto
     priceDiscount = parseFloat(price.toFixed(2));
     //messaggi sconto
     messageDiscount = `Non hai diritto a sconti.`;
-    messageSconto = `Applicazine sconto: ${price} Euro - 0 Euro`;
+    messageSconto = `Applica sconto: ${price} Euro - 0 Euro`;
     
 }
 
-console.log("prezzo scontato giovani = ", priceDiscount);
-console.log("prezzo scontato vecchi = ", priceDiscount);
+console.log("prezzo scontato= ", priceDiscount);
+
 
 //creazione messaggi
 
